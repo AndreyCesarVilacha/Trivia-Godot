@@ -8,6 +8,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 0.33371
 margin_bottom = 0.33374
+mouse_filter = 2
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
@@ -22,6 +23,9 @@ patch_margin_left = 1
 patch_margin_top = 1
 patch_margin_right = 1
 patch_margin_bottom = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Border" type="NinePatchRect" parent="."]
 anchor_right = 1.0
