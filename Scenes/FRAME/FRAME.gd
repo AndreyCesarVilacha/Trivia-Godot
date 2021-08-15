@@ -1,5 +1,6 @@
 extends Control
 
+#For auto complete out side of Scene
 class_name FRAME
 
 func get_border() -> NinePatchRect:
