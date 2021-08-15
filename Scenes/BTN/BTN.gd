@@ -3,6 +3,9 @@ extends TextureButton
 const HIGHLIGHT_COLOR := Color.red;
 const NORMAL_COLOR := Color.white;
 
+var clickable := true;
+var hoverable := true;
+
 func get_FRAME() -> FRAME:
 	var __FRAME: FRAME = $FRAME;
 	assert(__FRAME, "ERRO ON LINE 3");
@@ -26,15 +29,18 @@ func set_label_text(__text: String) -> void:
 	get_LABEL().text = __text;
 
 func _on_mouse_entered() -> void:
-	set_border_color(HIGHLIGHT_COLOR);
-	set_label_text_color(HIGHLIGHT_COLOR);
+	if hoverable:
+		set_border_color(HIGHLIGHT_COLOR);
+		set_label_text_color(HIGHLIGHT_COLOR);
 
 func _on_mouse_exited() -> void:
-	set_border_color(NORMAL_COLOR);
-	set_label_text_color(NORMAL_COLOR);
+	if hoverable:
+		set_border_color(NORMAL_COLOR);
+		set_label_text_color(NORMAL_COLOR);
 
 func _on_pressed() -> void:
-	set_label_text("Hello!");
+	if clickable:
+		set_label_text("Hello!");
 
 func _ready() -> void:
 	connect("mouse_entered",self, "_on_mouse_entered");
