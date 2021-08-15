@@ -4,15 +4,14 @@
 [ext_resource path="res://Scenes/FRAME/FRAME.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Fonts/MiniPixel.tres" type="DynamicFont" id=3]
 
-[node name="BTN" type="Control"]
+[node name="BTN" type="TextureButton"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = -730.0
 margin_bottom = -440.0
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_group_": true,
-"_edit_use_anchors_": false
+"_edit_group_": true
 }
 
 [node name="FRAME" parent="." instance=ExtResource( 2 )]
