@@ -11,7 +11,8 @@ margin_right = -730.0
 margin_bottom = -440.0
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_group_": true
+"_edit_group_": true,
+"_edit_use_anchors_": false
 }
 
 [node name="FRAME" parent="." instance=ExtResource( 2 )]
