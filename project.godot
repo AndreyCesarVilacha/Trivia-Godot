@@ -19,7 +19,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Scenes/FRAME/FRAME.gd"
 }, {
-"base": "TextureButton",
+"base": "BTN",
 "class": "LABEL",
 "language": "GDScript",
 "path": "res://Scenes/LABEL/LABEL.gd"

@@ -1,6 +1,8 @@
-extends TextureButton
+extends BTN
 
 class_name LABEL
 
-func _ready():
-	pass
+func _ready() -> void:
+	
+	clickable = false;
+	hoverable = false;
