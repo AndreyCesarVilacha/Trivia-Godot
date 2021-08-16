@@ -1,5 +1,7 @@
 extends TextureButton
 
+class_name BTN
+
 const HIGHLIGHT_COLOR := Color.red;
 const NORMAL_COLOR := Color.white;
 

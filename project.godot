@@ -9,13 +9,25 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "TextureButton",
+"class": "BTN",
+"language": "GDScript",
+"path": "res://Scenes/BTN/BTN.gd"
+}, {
 "base": "Control",
 "class": "FRAME",
 "language": "GDScript",
 "path": "res://Scenes/FRAME/FRAME.gd"
+}, {
+"base": "TextureButton",
+"class": "LABEL",
+"language": "GDScript",
+"path": "res://Scenes/LABEL/LABEL.gd"
 } ]
 _global_script_class_icons={
-"FRAME": ""
+"BTN": "",
+"FRAME": "",
+"LABEL": ""
 }
 
 [application]
