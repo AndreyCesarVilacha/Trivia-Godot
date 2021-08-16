@@ -9,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = -730.0
 margin_bottom = -440.0
+rect_min_size = Vector2( 230, 100 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true,
