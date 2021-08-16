@@ -42,6 +42,10 @@ config/name="Trivia"
 run/main_scene="res://Scenes/Main/Main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Questions="*res://Singletons/Questions.gd"
+
 [display]
 
 window/size/width=960

@@ -16,3 +16,5 @@ __meta__ = {
 }
 
 [node name="BTNGrid" parent="." instance=ExtResource( 2 )]
+margin_right = 560.0
+margin_bottom = 250.0
