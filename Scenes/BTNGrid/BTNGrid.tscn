@@ -4,9 +4,9 @@
 [ext_resource path="res://Scenes/BTNGrid/BTNGrid.gd" type="Script" id=2]
 
 [node name="BTNGrid" type="VBoxContainer"]
-margin_right = 40.0
+margin_right = 100.0
 margin_bottom = 40.0
-custom_constants/separation = 50
+custom_constants/separation = 20
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -15,7 +15,7 @@ __meta__ = {
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 margin_right = 560.0
 margin_bottom = 100.0
-custom_constants/separation = 100
+custom_constants/separation = 20
 
 [node name="BTN1" parent="HBoxContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -26,15 +26,15 @@ margin_bottom = 100.0
 [node name="BTN2" parent="HBoxContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 330.0
-margin_right = 560.0
+margin_left = 250.0
+margin_right = 480.0
 margin_bottom = 100.0
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="."]
-margin_top = 150.0
+margin_top = 120.0
 margin_right = 560.0
-margin_bottom = 250.0
-custom_constants/separation = 100
+margin_bottom = 220.0
+custom_constants/separation = 20
 
 [node name="BTN3" parent="HBoxContainer2" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -45,6 +45,6 @@ margin_bottom = 100.0
 [node name="BTN4" parent="HBoxContainer2" instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 330.0
-margin_right = 560.0
+margin_left = 250.0
+margin_right = 480.0
 margin_bottom = 100.0

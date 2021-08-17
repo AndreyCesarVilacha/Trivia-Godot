@@ -3,5 +3,5 @@
 [ext_resource path="res://Fonts/MiniPixel.ttf" type="DynamicFontData" id=1]
 
 [resource]
-size = 15
+size = 10
 font_data = ExtResource( 1 )
