@@ -40,9 +40,9 @@ func _on_mouse_exited() -> void:
 		set_border_color(NORMAL_COLOR);
 		set_label_text_color(NORMAL_COLOR);
 
-func _on_pressed() -> void:
-	if clickable:
-		set_label_text("Hello!");
+#func _on_pressed() -> void:
+#	if clickable:
+#		set_label_text("Hello!");
 
 func _ready() -> void:
 	connect("mouse_entered",self, "_on_mouse_entered");

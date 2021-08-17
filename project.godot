@@ -28,12 +28,18 @@ _global_script_classes=[ {
 "class": "LABEL",
 "language": "GDScript",
 "path": "res://Scenes/LABEL/LABEL.gd"
+}, {
+"base": "VBoxContainer",
+"class": "TriviaGrid",
+"language": "GDScript",
+"path": "res://Scenes/TriviaGrid/TriviaGrid.gd"
 } ]
 _global_script_class_icons={
 "BTN": "",
 "BTNGrid": "",
 "FRAME": "",
-"LABEL": ""
+"LABEL": "",
+"TriviaGrid": ""
 }
 
 [application]
@@ -45,11 +51,12 @@ config/icon="res://icon.png"
 [autoload]
 
 Questions="*res://Singletons/Questions.gd"
+G="*res://Singletons/G.gd"
 
 [display]
 
-window/size/width=960
-window/size/height=540
+window/size/width=450
+window/size/height=310
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 
