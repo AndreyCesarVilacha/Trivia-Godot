@@ -13,8 +13,16 @@ func _init_BTNs() -> void:
 		__BTN.rect_min_size = BTN_MIN_SIZE;
 		BTNs.append(__BTN);
 
+func disable() -> void:
+	for __i in BTN_COUNT:
+		var __BTN: BTN = BTNs[__i];
+		__BTN.clickable = false;
+		__BTN.hoverable = false;
+
 func update_BTNs_text() -> void:
 	var __choices := Questions.get_choices();
+	randomize();
+	__choices.shuffle();
 	assert(__choices.size() == BTN_COUNT);
 	for __i in BTN_COUNT:
 		var __choice: String = __choices[__i];

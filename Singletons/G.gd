@@ -3,7 +3,9 @@ extends Node
 var trivia_grid : TriviaGrid = null;
 
 func end_game() -> void:
-	get_tree().quit();
+	#get_tree().quit();
+	trivia_grid.modulate = Color.gray.darkened(0.5);
+	trivia_grid.btn_grid.disable();
 
 func show_next_question():
 	trivia_grid.increase_money_total();

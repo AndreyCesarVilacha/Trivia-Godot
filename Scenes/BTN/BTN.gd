@@ -2,7 +2,9 @@ extends TextureButton
 
 class_name BTN
 
-const HIGHLIGHT_COLOR := Color.red;
+const CORRECT_ANSWER_COLOR := Color.green;
+const INCORRECT_ANSWER_COLOR := Color.red;
+const HIGHLIGHT_COLOR := Color.cyan;
 const NORMAL_COLOR := Color.white;
 
 var clickable := true;
@@ -40,9 +42,13 @@ func _on_mouse_exited() -> void:
 		set_border_color(NORMAL_COLOR);
 		set_label_text_color(NORMAL_COLOR);
 
-#func _on_pressed() -> void:
-#	if clickable:
-#		set_label_text("Hello!");
+func _on_pressed() -> void:
+	if clickable:
+		if get_LABEL().text == Questions.get_answer():
+			G.show_next_question();
+		else:
+			set_border_color(INCORRECT_ANSWER_COLOR);
+			G.end_game();
 
 func _ready() -> void:
 	connect("mouse_entered",self, "_on_mouse_entered");
