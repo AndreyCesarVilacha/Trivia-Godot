@@ -14,7 +14,5 @@ func _init_BTNs() -> void:
 		BTNs.append(__BTN);
 
 func _ready():
-	print(BTNs);
 	_init_BTNs();
-	print(BTNs);
 	pass
